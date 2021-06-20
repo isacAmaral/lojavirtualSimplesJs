@@ -42,8 +42,11 @@ items.map((val)=>{
      items.map((val)=>{
          if(val.quantidade>0){
          containerCarrinho.innerHTML+=`
-         <p>`+val.nome+`| quantidade: `+val.quantidade+`</p>
-         <hr>
+         <div class="info-sigle-checkout">
+         <p style="float:left;">Produto:`+val.nome+`</p>
+         <p style="float:right;">Quantidade:`+val.quantidade+`</p>
+         <div style="clear:both"></p>
+         </div>
          `;
      }
      })
